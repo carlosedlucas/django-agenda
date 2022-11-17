@@ -78,8 +78,8 @@ WSGI_APPLICATION = 'agenda.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'USER': 'cursopython',
-        'PASSWORD': 'curs0Pyth0n@169',
+        'USER': 'carlosedlucas',
+        'PASSWORD': 'carlosedlucas@123',
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'NAME': 'sitedjango',
@@ -146,3 +146,8 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
+
+try:
+    from . local_settings import *
+except Exception as e:
+    pass
