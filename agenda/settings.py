@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '6i*7i-c$cg8e397498xg2hzkza-djnqoj#27#@4&x)jw&az_on'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['35.247.230.25']
+ALLOWED_HOSTS = ['djangoagenda.carlosedlucas.dev']
 
 
 # Application definition
@@ -141,3 +141,8 @@ MESSAGE_TAGS = {
     constants.SUCCESS: 'alert-success',
     constants.INFO: 'alert-info',
 }
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
