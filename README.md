@@ -2,7 +2,7 @@
 
 Construção de um site para administração de uma agenda com dados fictícios
 
-## 📦 Implantação
+## 📦 Implementação
 
 Como implantar isso em um sistema ativo!
 
