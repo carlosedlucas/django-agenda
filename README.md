@@ -12,7 +12,7 @@ Como implantar isso em um sistema ativo!
 * Vá para o ambiente : . venv/bin/activate
 * Instale as dependências : pip install -r requirements.txt;
 * Crie a base de dados : python3 manage.py migrate
-* Gere dados fictícios através do arquivo gerador.py
+* Gere dados fictícios para a bases de dados através do arquivo gerador.py
 * Suba o servidor : python3 manage.py runserver
 * Acesse o programa em 127.0.0.1:8000
 
