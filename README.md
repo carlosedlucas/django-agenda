@@ -11,10 +11,9 @@ Como implantar isso em um sistema ativo!
 * Crie um ambiente de desenvolvimento : python3 -m venv venv
 * Vá para o ambiente : . venv/bin/activate
 * Instale as dependências : pip install -r requirements.txt;
-* Vá para o diretório onde está o código fonte: cd src;
-* Crie a base de dados : python manage.py migrate
-* Gere dados fictícios através do arquivo gerador.py
-* Suba o servidor : python manage.py runserver
+* Crie a base de dados : python3 manage.py migrate
+* Gere dados fictícios para a bases de dados através do arquivo gerador.py
+* Suba o servidor : python3 manage.py runserver
 * Acesse o programa em 127.0.0.1:8000
 
 ## 🛠️ Construído com
